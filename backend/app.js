@@ -10,11 +10,13 @@ const app = express();
 require('dotenv/config');
 const api = process.env.API_URL;
 const authJwt = require('./helpers/jwt');
+const errorhandling = require('./helpers/error-handler')
 
 //middleware
 app.use(bodyParser.json());//json parser
 app.use(morgan('tiny'));//logge
 app.use(authJwt());
+app.use(errorhandling);
 
 //Routers
 const productsRouter = require('./routers/products');
