@@ -14,11 +14,7 @@ const authJwt = require('./helpers/jwt');
 //middleware
 app.use(bodyParser.json());//json parser
 app.use(morgan('tiny'));//logge
-app.use(authJwt);
-console.log('before auth');
-
-
-console.log('after auth');
+app.use(authJwt());
 
 //Routers
 const productsRouter = require('./routers/products');
@@ -26,8 +22,6 @@ app.use(`${api}/products`, productsRouter);
 
 const orderRouter = require('./routers/orders');
 app.use(`${api}/orders`, orderRouter);
-
-
 
 const userRouter = require('./routers/users');
 app.use(`${api}/users`, userRouter);
