@@ -1,0 +1,7 @@
+mongoose = connect nodejs and mongodb/schemas
+body-parser = json parser
+morgan = logger
+express = local instance of nodejs coded server
+
+code flow
+app.js -> (routers/products.js[api] + models/product.js [schema/model])
