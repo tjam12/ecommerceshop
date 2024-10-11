@@ -19,7 +19,8 @@ function authJWT() {
             {
                 url: /\/api\/v1\/categories(.*)/, //regex expression
                 methods: ['GET', 'OPTIONS']
-            }
+            },
+            `/home`
         ]
       });
 }

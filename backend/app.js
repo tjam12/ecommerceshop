@@ -31,6 +31,18 @@ app.use(`${api}/users`, userRouter);
 const categoryRouter = require('./routers/categories');
 app.use(`${api}/categories`, categoryRouter);
 
+//const path = require('path')
+//const frontend = path.join(__dirname,'../frontend')
+const frontend = process.env.frontend
+
+app.get(`/home`, (req, res) => {
+    //res.sendFile('home.html', {root : frontend})
+    sendHTML(res,'home.html')
+});
+
+function sendHTML (res, html){
+    res.sendFile(html, {root : frontend}) 
+}
 
 mongoose.connect(process.env.CONNECTION_STRING)
 .then(()=>{

@@ -1,0 +1,15 @@
+//admin
+{
+    "email": "paisen4@gmail.com",
+    "password": "123456"
+}
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzA3OTFlYTc5NmQ4OTdmMTFmM2RhODEiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE3Mjg2MjE2NzEsImV4cCI6MTcyODcwODA3MX0.V61-3WyUn4Cs5_wkcIDMFCKaJMsGDasbF-YaCjYkJbs
+
+//not admin
+{
+    "email": "paisen3@gmail.com",
+    "password": "789123"
+}
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzA3ODA5OTZjNTE3ODk0ODI0NTk1NDEiLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNzI4NjIxMjczLCJleHAiOjE3Mjg3MDc2NzN9.6sGzvUTvYWYJQSWfZQV0Z-hkfdSeR-YiRWz-AxUnSbs
